@@ -1,0 +1,113 @@
+From 9620cb27d779df518c67b2013f9a641168e0c2e8 Mon Sep 17 00:00:00 2001
+From: Sylvain Corlay <sylvain.corlay@gmail.com>
+Date: Tue, 21 Feb 2017 01:47:40 +0100
+Subject: [PATCH] rename kernels
+
+---
+ tools/Jupyter/kernel/cling-c++11/kernel.json | 9 ---------
+ tools/Jupyter/kernel/cling-c++14/kernel.json | 9 ---------
+ tools/Jupyter/kernel/cling-c++17/kernel.json | 9 ---------
+ tools/Jupyter/kernel/cling-cpp11/kernel.json | 9 +++++++++
+ tools/Jupyter/kernel/cling-cpp14/kernel.json | 9 +++++++++
+ tools/Jupyter/kernel/cling-cpp17/kernel.json | 9 +++++++++
+ 6 files changed, 27 insertions(+), 27 deletions(-)
+ delete mode 100644 tools/Jupyter/kernel/cling-c++11/kernel.json
+ delete mode 100644 tools/Jupyter/kernel/cling-c++14/kernel.json
+ delete mode 100644 tools/Jupyter/kernel/cling-c++17/kernel.json
+ create mode 100644 tools/Jupyter/kernel/cling-cpp11/kernel.json
+ create mode 100644 tools/Jupyter/kernel/cling-cpp14/kernel.json
+ create mode 100644 tools/Jupyter/kernel/cling-cpp17/kernel.json
+
+diff --git a/tools/Jupyter/kernel/cling-c++11/kernel.json b/tools/Jupyter/kernel/cling-c++11/kernel.json
+deleted file mode 100644
+index 8663533..0000000
+--- a/tools/Jupyter/kernel/cling-c++11/kernel.json
++++ /dev/null
+@@ -1,9 +0,0 @@
+-{
+-  "display_name": "C++11",
+-  "argv": [
+-      "jupyter-cling-kernel",
+-      "-f",
+-      "{connection_file}",
+-      "--std=c++11"
+-  ]
+-}
+diff --git a/tools/Jupyter/kernel/cling-c++14/kernel.json b/tools/Jupyter/kernel/cling-c++14/kernel.json
+deleted file mode 100644
+index b55e6c0..0000000
+--- a/tools/Jupyter/kernel/cling-c++14/kernel.json
++++ /dev/null
+@@ -1,9 +0,0 @@
+-{
+-  "display_name": "C++14",
+-  "argv": [
+-      "jupyter-cling-kernel",
+-      "-f",
+-      "{connection_file}",
+-      "--std=c++14"
+-  ]
+-}
+diff --git a/tools/Jupyter/kernel/cling-c++17/kernel.json b/tools/Jupyter/kernel/cling-c++17/kernel.json
+deleted file mode 100644
+index e0fb338..0000000
+--- a/tools/Jupyter/kernel/cling-c++17/kernel.json
++++ /dev/null
+@@ -1,9 +0,0 @@
+-{
+-  "display_name": "C++17",
+-  "argv": [
+-      "jupyter-cling-kernel",
+-      "-f",
+-      "{connection_file}",
+-      "--std=c++17"
+-  ]
+-}
+diff --git a/tools/Jupyter/kernel/cling-cpp11/kernel.json b/tools/Jupyter/kernel/cling-cpp11/kernel.json
+new file mode 100644
+index 0000000..8663533
+--- /dev/null
++++ b/tools/Jupyter/kernel/cling-cpp11/kernel.json
+@@ -0,0 +1,9 @@
++{
++  "display_name": "C++11",
++  "argv": [
++      "jupyter-cling-kernel",
++      "-f",
++      "{connection_file}",
++      "--std=c++11"
++  ]
++}
+diff --git a/tools/Jupyter/kernel/cling-cpp14/kernel.json b/tools/Jupyter/kernel/cling-cpp14/kernel.json
+new file mode 100644
+index 0000000..b55e6c0
+--- /dev/null
++++ b/tools/Jupyter/kernel/cling-cpp14/kernel.json
+@@ -0,0 +1,9 @@
++{
++  "display_name": "C++14",
++  "argv": [
++      "jupyter-cling-kernel",
++      "-f",
++      "{connection_file}",
++      "--std=c++14"
++  ]
++}
+diff --git a/tools/Jupyter/kernel/cling-cpp17/kernel.json b/tools/Jupyter/kernel/cling-cpp17/kernel.json
+new file mode 100644
+index 0000000..e0fb338
+--- /dev/null
++++ b/tools/Jupyter/kernel/cling-cpp17/kernel.json
+@@ -0,0 +1,9 @@
++{
++  "display_name": "C++17",
++  "argv": [
++      "jupyter-cling-kernel",
++      "-f",
++      "{connection_file}",
++      "--std=c++17"
++  ]
++}
+-- 
+2.7.4
+

@@ -16,6 +16,6 @@ if errorlevel 1 exit 1
 REM Install kernelspec
 cd %SRC_DIR%\tools\Jupyter\kernel\
 python %SRC_DIR%\tools\Jupyter\kernel\setup.py install
-jupyter kernelspec install %PREFIX%\share\cling\Jupyter\kernel\cling-c++11 --sys-prefix
-jupyter kernelspec install %PREFIX%\share\cling\Jupyter\kernel\cling-c++14 --sys-prefix
-jupyter kernelspec install %PREFIX%\share\cling\Jupyter\kernel\cling-c++17 --sys-prefix
+jupyter kernelspec install %PREFIX%\share\cling\Jupyter\kernel\cling-cpp11 --sys-prefix
+jupyter kernelspec install %PREFIX%\share\cling\Jupyter\kernel\cling-cpp14 --sys-prefix
+jupyter kernelspec install %PREFIX%\share\cling\Jupyter\kernel\cling-cpp17 --sys-prefix
