@@ -50,8 +50,8 @@ requirements:
 test:
   commands:
     - test -f $PREFIX/bin/cling  # [unix]
-    - cling '2+3; 0'
-    - cling '#include <vector>; std::vector<double> = {0, 2, 5}'
+    - cling "2+3; 0"
+    - cling "#include <vector>; std::vector<double> = {0, 2, 5}"
 
 about:
   dev_url: https://github.com/root-project/cling
